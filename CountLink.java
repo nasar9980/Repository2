@@ -43,6 +43,7 @@ public class CountLink {
 			bw.write(i+"."+Link.get(i).getText());
 			bw.newLine();
 			bw.flush();
+			System.out.println("Build is Success");
 		}
 		
 	}
