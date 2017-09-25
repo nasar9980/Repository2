@@ -24,6 +24,7 @@ public class CountLink {
 	@AfterTest
 	public void CloseBrowser(){
 		driver.quit();
+		System.out.println("Build is Success");
 	}
 	@Test
 	public void Link_Count() throws IOException{
@@ -43,7 +44,7 @@ public class CountLink {
 			bw.write(i+"."+Link.get(i).getText());
 			bw.newLine();
 			bw.flush();
-			System.out.println("Build is Success");
+			
 		}
 		
 	}
